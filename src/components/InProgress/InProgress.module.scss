@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 210px;
+  margin-top: 20px;
+  border: solid 1px #dbdbdb;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 90px;
+  font-weight: 700;
+  color: #d3e9fabd;
+
+  @media screen and (max-width: 767px) and (min-width: 320px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    height: 400px;
+    margin: 20px auto;
+  }
+}

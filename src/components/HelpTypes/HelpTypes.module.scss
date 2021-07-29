@@ -1,0 +1,96 @@
+.title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: #363b5d;
+}
+.subtitle {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #9b9eaf;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.arrow {
+  color: transparent;
+  position: absolute;
+  width: 20px;
+  bottom: -22px;
+  left: 19px;
+  z-index: 99;
+  border-bottom: 3px solid #fff;
+}
+
+.arrowDN {
+  color: transparent;
+  position: absolute;
+  display: none;
+}
+.arrow::before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  bottom: 7px;
+  left: -6px;
+  transform: rotate(121deg);
+  z-index: 99;
+  border-bottom: 1px solid #dbdbdb;
+}
+.arrow::after {
+  content: '';
+  position: absolute;
+  width: 21px;
+  bottom: 7px;
+  left: 5px;
+  z-index: 99;
+  transform: rotate(60deg);
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  fill: #cad9e8;
+  border: 2px solid #cad9e8;
+  border-radius: 10px;
+  padding: 10px;
+}
+.iconActiv {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  fill: #cad9e8;
+  border: 2px solid #670380;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #670380;
+}
+
+.icon:hover,
+.icon:focus {
+  border: 2px solid #670380;
+  background-color: #670380;
+}
+
+.item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.description {
+  width: 100px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #cad9e8;
+}

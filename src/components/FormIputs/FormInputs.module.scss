@@ -1,0 +1,83 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @media screen and (max-width: 1199px) and (min-width: 320px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.leftBlockInputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.smallBlockInputs {
+  display: flex;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  color: #acb1b8;
+  font-size: 16px;
+}
+
+.labelSmall {
+  display: flex;
+  flex-direction: column;
+  color: #acb1b8;
+  font-size: 16px;
+}
+.labelSmall:first-child {
+  margin-right: 20px;
+}
+
+.smallInput {
+  width: 160px;
+  height: 36px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #f3f7fa;
+  border: none;
+  outline: none;
+
+  &:focus,
+  &:hover {
+    border: 1px solid #363b5d;
+  }
+}
+
+.largeInput {
+  width: 340px;
+  height: 36px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #f3f7fa;
+  border: none;
+  outline: none;
+
+  &:focus,
+  &:hover {
+    border: 1px solid #363b5d;
+  }
+}
+
+.fileLabel {
+  position: absolute;
+  top: 34%;
+  left: 44%;
+  color: #363b5d;
+  @media screen and (max-width: 1199px) and (min-width: 320px) {
+    top: 22%;
+  }
+}
+
+.fileInput {
+  display: none;
+}

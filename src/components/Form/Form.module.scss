@@ -1,0 +1,80 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: #363b5d;
+}
+
+.btnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.leftBtn {
+  padding: 10px 20px;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #363b5d;
+  border: none;
+}
+.leftBtn-active {
+  background-color: #363b5d;
+}
+
+.rightBtn {
+  padding: 8px 16px;
+  border: 2px solid #363b5d;
+  border-radius: 0 5px 5px 0;
+  background: transparent;
+  font-size: 16px;
+  color: #363b5d;
+}
+.rghtBtn-active {
+  background-color: #363b5d;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #9b9eaf;
+}
+
+.payFormBtn {
+  margin: 0 auto;
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 40px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #d84659 0%, #886ca6 100%);
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, #886ca6 0%, #d84659 100%);
+  }
+}
